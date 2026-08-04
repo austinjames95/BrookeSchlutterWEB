@@ -3,6 +3,8 @@
     --cherry-bright: #c40003;
     --cherry-dark: #6b0001;
     --cream: #efe6de;
+    --cream-light: #f8f3ee;
+    --cream-2: #e6dbd1;
     --noir: #181717;
     --noir-2: #211f1f;
     --charcoal: #2a2626;
@@ -16,8 +18,8 @@
 }
 body {
     font-family: "Segoe UI", Arial, sans-serif;
-    background: var(--noir);
-    color: var(--cream);
+    background: var(--cream);
+    color: var(--noir);
 }
 .placeholder {
     background:
@@ -35,18 +37,18 @@ body {
         var(--taupe-dark) calc(50% + 1px),
         transparent calc(50% + 1px)
         ),
-        var(--charcoal);
+        var(--taupe);
     border: 1px solid var(--taupe-dark);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--taupe);
+    color: var(--charcoal);
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .placeholder span {
-    background: var(--charcoal);
+    background: var(--taupe);
     padding: 2px 8px;
 }
     .container {
@@ -60,8 +62,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: rgba(24, 23, 23, 0.95);
-    border-bottom: 1px solid var(--charcoal);
+    background: rgba(239, 230, 222, 0.95);
+    border-bottom: 1px solid var(--taupe);
 }
 .header-inner {
     display: flex;
@@ -73,10 +75,10 @@ header {
     font-weight: 900;
     letter-spacing: 3px;
     font-size: 16px;
-    color: var(--cream);
+    color: var(--noir);
 }
 .logo .num {
-    color: var(--cherry-bright);
+    color: var(--cherry);
     font-size: 20px;
 }
 nav ul {
@@ -87,13 +89,13 @@ nav ul {
 }
 nav a {
     text-decoration: none;
-    color: var(--taupe);
+    color: var(--charcoal);
     font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 nav a:hover {
-    color: var(--cream);
+    color: var(--cherry);
 }
 .nav-cta {
     background: var(--cherry);
@@ -114,7 +116,7 @@ nav a:hover {
 .hamburger div {
     width: 24px;
     height: 3px;
-    background: var(--cream);
+    background: var(--noir);
 }
 
     /* Hero — split with giant type */
@@ -135,7 +137,7 @@ nav a:hover {
     z-index: 2;
 }
 .hero-kicker {
-    color: var(--cherry-bright);
+    color: var(--cherry);
     letter-spacing: 5px;
     text-transform: uppercase;
     font-size: 13px;
@@ -151,17 +153,17 @@ nav a:hover {
 }
 .hero h1 .outline {
     color: transparent;
-    -webkit-text-stroke: 2px var(--cream);
+    -webkit-text-stroke: 2px var(--noir);
 }
 .hero-sub {
     margin: 22px 0 32px;
     font-size: 17px;
-    color: var(--taupe);
+    color: var(--charcoal);
     max-width: 440px;
     line-height: 1.6;
 }
 .hero-sub b {
-    color: var(--cream);
+    color: var(--cherry-dark);
 }
 .hero-actions {
     display: flex;
@@ -186,10 +188,10 @@ nav a:hover {
 .btn.ghost {
     background: transparent;
     border: 1px solid var(--taupe-dark);
-    color: var(--cream);
+    color: var(--noir);
 }
 .btn.ghost:hover {
-    border-color: var(--cream);
+    border-color: var(--noir);
 }
 .hero-right {
     position: relative;
@@ -260,17 +262,17 @@ section {
 }
 .section-head h2::before {
     content: "— ";
-    color: var(--cherry-bright);
+    color: var(--cherry);
 }
 .section-head a {
-    color: var(--taupe);
+    color: var(--taupe-dark);
     font-size: 13px;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
 }
 .section-head a:hover {
-    color: var(--cream);
+    color: var(--noir);
 }
 
     /* Highlights: featured video + thumbnails */
@@ -328,7 +330,7 @@ section {
 
     /* Why sponsor — 3 columns */
 .why {
-    background: var(--noir-2);
+    background: var(--cream-2);
 }
 .why-grid {
     display: grid;
@@ -336,15 +338,16 @@ section {
     gap: 24px;
 }
 .why-card {
-    border: 1px solid var(--charcoal);
+    border: 1px solid var(--taupe);
     padding: 28px;
-    background: var(--noir);
+    background: var(--cream-light);
 }
 .why-card .icon {
     width: 48px;
     height: 48px;
     border-radius: 50%;
     background: var(--cherry);
+    color: var(--cream);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,7 +363,7 @@ section {
 }
 .why-card p {
     font-size: 14px;
-    color: var(--taupe);
+    color: var(--charcoal);
     line-height: 1.7;
 }
 
@@ -380,7 +383,7 @@ section {
     margin-bottom: 12px;
 }
 .goal-box p {
-    color: var(--taupe);
+    color: var(--charcoal);
     font-size: 15px;
     line-height: 1.7;
 }
@@ -393,12 +396,12 @@ section {
     font-size: 12px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: var(--taupe);
+    color: var(--charcoal);
     margin-bottom: 8px;
 }
 .progress {
     height: 22px;
-    background: var(--charcoal);
+    background: var(--cream-2);
     border: 1px solid var(--taupe-dark);
 }
 .progress-fill {
@@ -412,8 +415,8 @@ section {
 
     /* Sponsors strip */
 .sponsors {
-    border-top: 1px solid var(--charcoal);
-    border-bottom: 1px solid var(--charcoal);
+    border-top: 1px solid var(--taupe);
+    border-bottom: 1px solid var(--taupe);
     padding: 40px 0;
 }
 .sponsors h4 {
@@ -435,9 +438,11 @@ section {
     height: 56px;
 }
 
-    /* Footer */
+    /* Footer — inverted to noir */
 footer {
     padding: 48px 0 24px;
+    background: var(--noir);
+    color: var(--cream);
 }
 .footer-grid {
     display: grid;
